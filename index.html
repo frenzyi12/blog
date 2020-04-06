@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-size: 18px;
+  background: linear-gradient(to right, #2980b9, #2c3e50);
+}
+
+/* nav */
+a, a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 0px 9px 4px rgba(0, 0, 0, 0.1), 0 -5px 2px 2px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 580px;
+  background: linear-gradient(to right, #000428, #004e92);
+}
+nav .logo {
+  position: relative;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+nav .logo span {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  font-size: 13pt;
+}
+
+nav .links {
+  float: right;
+  margin-right: 30px;
+  position: relative;
+}
+nav .links li {
+  float: left;
+  list-style: none;
+  position: relative;
+  margin: 10px;
+}
+nav .links li > a {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+}
+nav .links li > a:hover {
+  color: #fff;
+  background: #004e92;
+  border-radius: 2px;
+}
+nav .links li > a[class^="trigger-"] {
+  padding-right: 40px;
+}
+nav .links li > a .arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 35%;
+  text-align: center;
+  right: 10px;
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3) transparent;
+}
+nav .links li > a .arrow:after {
+  content: "";
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  top: -10px;
+  left: -15px;
+  position: absolute;
+  height: 15px;
+}
+nav .links li ul {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  background: #000428;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+nav .links li ul > li {
+  clear: both;
+  list-style: none;
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  width: 100%;
+  color: #004e92;
+}
+nav .links li ul > li:hover {
+  background: #323335;
+}
+nav .links li ul > li:hover > a {
+  background: #323335;
+  color: #fff;
+}
+nav .links li:hover > .drop {
+  display: block;
+}
+
+.text {
+  color: white;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 60px;
+  width: 62%;
+}
+
+/* Style the footer */
+footer {
+ width: 100%;
+ background: linear-gradient(to right, #000428, #004e92);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: absolute; bottom: 0px; left: 0px;
+}
+p
+{
+  font-size: 22px;
+}
+img
+{
+  z-index: 3;
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+</style>
+</head>
+<body>
+  <nav id="navigation">
+    <a href="index.html" class="logo">Final Project</a>
+    <ul class="links">
+      <li><a href="#">About</a></li>
+      <li class="dropdown"><a href="#" class="trigger-drop">Hobbies<i class="arrow"></i></a>
+        <ul class="drop">
+          <li><a href="pokemon.html" target="_blank">Pokemon</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="#" class="trigger-drop">Hobbies<i class="arrow"></i></a>
+        <ul class="drop">
+          <li><a href="pokemon.html">Pokemon</a></li>
+          <li><a href="pokemon.html">Pokemon</a></li>
+          <li><a href="pokemon.html">Pokemon</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="text">
+    <h1><u> about-me</u></h1>
+   <p>Hello it's time for you to learn me better.my name is - Yishai Moshe kahalani(YMK) also known as Jessie Kahalni.
+   My origin is england well that means I am british and not israli though I am jewish.</p>
+   <br>
+   <p>We moved to israel for anumber of reasons for instance it is the country of god and we believe in god.</p>
+   <p>plus israel has jerusalem which is a big thing in our religion.</p>
+   <p>We moved to israel in 2010.I was 6 years old or you could say first grade.</p>
+   <br>
+   <p>I will talk about my family,my dads side is jewish and temani he owned a company in england and sold it when we moved to israel.</p>
+   <p>now my dad owns a company in israel.</p>
+   <br>
+   <p>my moms side is christian before my mom married my dad she converted to jewish therefor i am jewish</p>
+   <p>an intersting fact about my moms side-her sister married the world champion in boxing in that time which her son is climbing the ladder now.</p>
+  </div>
+ 
+  <footer>
+    <p>The end</p>
+  </footer>
+
+  <img src="hibro.jpg" alt="Trulli" width="400" height="500">
+</body>
+</html>

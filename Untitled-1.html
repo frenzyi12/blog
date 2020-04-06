@@ -1,0 +1,40 @@
+
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function check() {
+            //check if the input fields are filled ok
+            var iphone = document.getElementById("iphone").value;
+            var gb = document.getElementById("gb").value;
+            if (iphone > 2 && gb !=64 || gb !=128) {
+                alert("this phone doesnt exist at this store");
+                return false;
+            }
+            else if (iphone > 2) {
+                alert("this phone doesnt exist");
+                return false;
+            }
+            else if (gb !=64 || gb !=128) {
+                alert("please enter a valid number of gb 64 or 128");
+                return false;
+            }
+            else
+                return true;
+        }</script>
+</head>
+<body>
+    <form id="form1" onsubmit="check();">
+        x+: <input type="text" id="iphone">
+        <br>
+        gb: <input type="text" id="gb">
+        <br>
+        <input type="submit" value="Check data">
+    </form>
+
+    <p>Click on the submit button to check the data</p>
+</body>
+</html>
+checkData.html
+Displaying checkData.html.
